@@ -65,8 +65,14 @@ import {scan, map} from 'rxjs/operators';
 //     canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
 // })
 
-const sub = interval(500).subscribe(value => console.log(value))
+// const sub = interval(500).subscribe(value => console.log(value))
+//
+// setTimeout(() => {
+//     sub.unsubscribe()
+// }, 4000)
 
-setTimeout(() => {
-    sub.unsubscribe()
-}, 4000)
+// timer(2500).subscribe(v => console.log(v))
+
+range(42, 10).subscribe(value => console.log(value))
+
+
